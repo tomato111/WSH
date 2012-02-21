@@ -1,0 +1,13 @@
+﻿<job id="main">
+    <script language="JavaScript">
+        var ws = new ActiveXObject("WScript.Shell");
+        var fs = new ActiveXObject("Scripting.FileSystemObject");
+
+        for (var i = 0; i < WScript.Arguments.Count(); i++) {
+            var arg = WScript.Arguments(i);
+            var name = fs.getFile(arg).name;
+            var target = ws.SpecialFolders.item("Desktop") + "\\" + name;
+            ws.Run('cmd /C mklink /h "' + target + '" "' + arg + '"', 7, false);
+        }
+    </script>
+</job>
