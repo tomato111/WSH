@@ -1,0 +1,13 @@
+HardLink.wsf
+　このスクリプトにファイルをドロップするとデスクトップへハードリンクを作成する
+
+exportFavorite.js http://ashiato1.blog62.fc2.com/blog-entry-61.html
+　StreamingPlayer3のお気に入りをエクスポートするプラグイン
+
+firefox_process.wsf
+　firefox.exeが起動していない時に実行するとただ起動させる。新しいタブを開かせない
+
+redirect.wsf
+　プロセス作成がおかしいアプリケーションの外部コマンドに指定して、代わりにプロセスを立ち上げる
+　wsfを受け付けないならmakeexeでexe化して使う。
+　e.g.) C:\redirect.exe "C:\Program Files\Nightly\firefox.exe" "URL"
